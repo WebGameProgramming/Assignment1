@@ -31,13 +31,9 @@ var scenes;
             // add this scene to the global stage container
             stage.addChild(this);
         };
-        /*
-                // INTRO Scene updates here
-                public update(): void {
-        
-                }
-                
-          */
+        // INTRO Scene updates here
+        leftcave2.prototype.update = function () {
+        };
         //EVENT HANDLERS ++++++++++++++++++++
         // LEFT_CAVE Button click event handler
         leftcave2.prototype._leftCaveButtonClick = function (event) {
