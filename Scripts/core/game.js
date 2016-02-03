@@ -6,8 +6,9 @@ var stats;
 var currentScene;
 var scene;
 // Game Scenes
+// files names are intro,lefcave,rightcave...
 var intro;
-var leftCave;
+var leftCave2;
 var rightCave;
 function init() {
     // create a reference the HTML canvas Element
@@ -22,7 +23,7 @@ function init() {
     createjs.Ticker.on("tick", gameLoop, this);
     // sets up our stats counting workflow
     setupStats();
-    // set initial scene
+    // set initial scene i.e intro.ts
     scene = config.Scene.INTRO;
     changeScene();
 }
@@ -50,6 +51,7 @@ function setupStats() {
 function changeScene() {
     // Launch various scenes
     switch (scene) {
+        //intro.ts file runs in this
         case config.Scene.INTRO:
             // show the MENU scene
             stage.removeAllChildren();
@@ -57,17 +59,23 @@ function changeScene() {
             currentScene = intro;
             console.log("Starting INTRO Scene");
             break;
+        //----------------------------------------------------------------------------------       
+        //leftcave.ts files on this
         case config.Scene.LEFT_CAVE:
             // show the PLAY scene
             stage.removeAllChildren();
-            leftCave = new scenes.LeftCave();
-            currentScene = leftCave;
+            leftCave2 = new scenes.LeftCave(); // scenes.LeftCave is variable which points to leftcave.ts file.
+            //ASSIGNING THE leftcave.ts file 
+            currentScene = leftCave2;
             console.log("Starting LEFT_CAVE Scene");
             break;
+        //----------------------------------------------------------------------------------       
+        //rightcave.ts files runs on this
         case config.Scene.RIGHT_CAVE:
             // show the game OVER scene
             stage.removeAllChildren();
-            rightCave = new scenes.RightCave();
+            rightCave = new scenes.RightCave(); // scenes.RightCave is variable which points to rightcave.ts file.
+            //assigning the rightcave.ts file
             currentScene = rightCave;
             console.log("Starting RIGHT_CAVE Scene");
             break;

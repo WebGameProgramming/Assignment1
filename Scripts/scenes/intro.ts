@@ -29,14 +29,14 @@ module scenes {
             // LEFT_CAVE Button event listener
             this._leftCaveButton.on("click", this._leftCaveButtonClick, this);
             
-            // add the LEFT_CAVE button to the MENU scene
+            // add the RIGHT_CAVE button to the MENU scene
             this._rightCaveButton = new objects.Button(
                 "RightCaveButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._rightCaveButton);
             
-            // LEFT_CAVE Button event listener
+            // RIGHT_CAVE Button event listener
             this._rightCaveButton.on("click", this._rightCaveButtonClick, this);
             
             // add this scene to the global stage container
@@ -58,9 +58,9 @@ module scenes {
             changeScene();
         }
         
-        // LEFT_CAVE Button click event handler
+        // RIGHT_CAVE Button click event handler
         private _rightCaveButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
+            // Switch to the RIGHT_CAVE Scene
             scene = config.Scene.RIGHT_CAVE;
             changeScene();
         }

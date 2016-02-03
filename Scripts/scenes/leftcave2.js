@@ -6,17 +6,17 @@ var __extends = (this && this.__extends) || function (d, b) {
 // INTRO SCENE
 var scenes;
 (function (scenes) {
-    var Intro = (function (_super) {
-        __extends(Intro, _super);
+    var leftcave2 = (function (_super) {
+        __extends(leftcave2, _super);
         // CONSTRUCTOR ++++++++++++++++++++++
-        function Intro() {
+        function leftcave2() {
             _super.call(this);
         }
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
-        Intro.prototype.start = function () {
+        leftcave2.prototype.start = function () {
             // add Intro Image
-            this._introImage = new createjs.Bitmap("../../Assets/images/IntroCave.png");
+            this._introImage = new createjs.Bitmap("../../Assets/images/goku.jpg");
             this.addChild(this._introImage);
             // add the LEFT_CAVE button to the MENU scene
             this._leftCaveButton = new objects.Button("LeftCaveButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
@@ -31,24 +31,28 @@ var scenes;
             // add this scene to the global stage container
             stage.addChild(this);
         };
-        // INTRO Scene updates here
-        Intro.prototype.update = function () {
-        };
+        /*
+                // INTRO Scene updates here
+                public update(): void {
+        
+                }
+                
+          */
         //EVENT HANDLERS ++++++++++++++++++++
         // LEFT_CAVE Button click event handler
-        Intro.prototype._leftCaveButtonClick = function (event) {
+        leftcave2.prototype._leftCaveButtonClick = function (event) {
             // Switch to the LEFT_CAVE Scene
             scene = config.Scene.LEFT_CAVE;
             changeScene();
         };
         // RIGHT_CAVE Button click event handler
-        Intro.prototype._rightCaveButtonClick = function (event) {
+        leftcave2.prototype._rightCaveButtonClick = function (event) {
             // Switch to the RIGHT_CAVE Scene
             scene = config.Scene.RIGHT_CAVE;
             changeScene();
         };
-        return Intro;
+        return leftcave2;
     })(objects.Scene);
-    scenes.Intro = Intro;
+    scenes.leftcave2 = leftcave2;
 })(scenes || (scenes = {}));
-//# sourceMappingURL=intro.js.map
+//# sourceMappingURL=leftcave2.js.map
