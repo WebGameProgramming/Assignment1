@@ -12,7 +12,7 @@ var scene: number;
 
 // files names are intro,lefcave,rightcave...
 var intro: scenes.Intro;
-var leftCave: scenes.leftcave2;
+var leftCave: scenes.LeftCave;
 var rightCave: scenes.RightCave;
 
 function init(): void {
@@ -82,7 +82,7 @@ function changeScene(): void {
         case config.Scene.LEFT_CAVE:
             // show the PLAY scene
             stage.removeAllChildren();
-            leftCave = new scenes.leftcave2();       // scenes.LeftCave is variable which points to leftcave.ts file.
+            leftCave = new scenes.LeftCave();       // scenes.LeftCave is variable which points to leftcave.ts file.
             //ASSIGNING THE leftcave.ts file 
             currentScene = leftCave;
             console.log("Starting LEFT_CAVE Scene");

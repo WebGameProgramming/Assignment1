@@ -64,7 +64,7 @@ function changeScene() {
         case config.Scene.LEFT_CAVE:
             // show the PLAY scene
             stage.removeAllChildren();
-            leftCave = new scenes.leftcave2(); // scenes.LeftCave is variable which points to leftcave.ts file.
+            leftCave = new scenes.LeftCave(); // scenes.LeftCave is variable which points to leftcave.ts file.
             //ASSIGNING THE leftcave.ts file 
             currentScene = leftCave;
             console.log("Starting LEFT_CAVE Scene");
