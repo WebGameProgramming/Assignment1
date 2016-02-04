@@ -11,3 +11,4 @@
 /// <reference path="../scenes/intro.ts" />
 /// <reference path="../scenes/leftcave2.ts" />
 /// <reference path="../scenes/rightcave2.ts" />
+///<reference path="../scenes/scene13.ts" />

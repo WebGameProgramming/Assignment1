@@ -7,6 +7,7 @@
         public static RIGHT_CAVE: number = 2;
         public static LEFT_CAVE2: number=3;
         public static RIGHT_CAVE2: number=4;
+        public static scene13: number=5;
     }
     
     

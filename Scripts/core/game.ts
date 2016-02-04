@@ -18,6 +18,9 @@ var rightCave: scenes.RightCave;
 var leftCave2: scenes.LeftCave2;
 var rightCave2: scenes.RightCave2;
 
+//---------scene variables----------------
+var Scene13: scenes.loose;
+
 function init(): void {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -123,6 +126,18 @@ function changeScene(): void {
             currentScene = rightCave2;
             console.log("Starting RIGHT_CAVE Scene");
             break; 
+            
+     //-------------scene 13-------------------
+     case config.Scene.scene13:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            Scene13 = new scenes.loose();   // scenes.RightCave is variable which points to rightcave.ts file.
+            
+            //assigning the rightcave.ts file
+            currentScene = Scene13;
+            console.log("You loose the game..");
+            break; 
+     
             
     }
 
