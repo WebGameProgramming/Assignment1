@@ -10,6 +10,7 @@ var config;
         Scene.LEFT_CAVE2 = 3;
         Scene.RIGHT_CAVE2 = 4;
         Scene.scene13 = 5;
+        Scene.scene14 = 6;
         return Scene;
     })();
     config.Scene = Scene;

@@ -20,7 +20,7 @@ var rightCave2: scenes.RightCave2;
 
 //---------scene variables----------------
 var Scene13: scenes.loose;
-
+var Scene14: scenes.win;
 function init(): void {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -91,10 +91,10 @@ function changeScene(): void {
             leftCave = new scenes.LeftCave();       // scenes.LeftCave is variable which points to leftcave.ts file.
             //ASSIGNING THE leftcave.ts file 
             currentScene = leftCave;
-            console.log("Starting LEFT_CAVE Scene");
+            console.log("Congrats you choosed friend");
             break;
      //----------------------------------------------------------------------------------       
-            //rightcave.ts files runs on this
+            
         case config.Scene.RIGHT_CAVE:
             // show the game OVER scene
             stage.removeAllChildren();
@@ -102,7 +102,7 @@ function changeScene(): void {
             
             //assigning the rightcave.ts file
             currentScene = rightCave;
-            console.log("Starting RIGHT_CAVE Scene");
+            console.log("Congrats you choosed friend");
             break;
             
      //---------------------------------------------------------------------------
@@ -113,7 +113,7 @@ function changeScene(): void {
             leftCave2 = new scenes.LeftCave2();
             //ASSIGNING THE leftcave2.ts file 
             currentScene = leftCave2;
-            console.log("Starting FINAL LEFT_CAVE  Scene");
+            console.log("You choose enemy cell ");
             break;
     //-------------------------------------------------------
     
@@ -131,11 +131,22 @@ function changeScene(): void {
      case config.Scene.scene13:
             // show the game OVER scene
             stage.removeAllChildren();
-            Scene13 = new scenes.loose();   // scenes.RightCave is variable which points to rightcave.ts file.
+            Scene13 = new scenes.loose();   
             
             //assigning the rightcave.ts file
             currentScene = Scene13;
             console.log("You loose the game..");
+            break; 
+     //---------------------scene 14------------------
+     
+     case config.Scene.scene14:
+            // show that you won the game
+            stage.removeAllChildren();
+            Scene14 = new scenes.win();   
+            
+            //assigning the rightcave.ts file
+            currentScene = Scene14;
+            console.log("You won the game finally..");
             break; 
      
             
