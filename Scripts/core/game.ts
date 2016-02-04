@@ -108,7 +108,7 @@ function changeScene(): void {
        stage.removeAllChildren();
             //leftCave2 = new scenes.LeftCave2();  // scenes.LeftCave is variable which points to leftcave.ts file.
             leftCave2 = new scenes.LeftCave2();
-            //ASSIGNING THE leftcave.ts file 
+            //ASSIGNING THE leftcave2.ts file 
             currentScene = leftCave2;
             console.log("Starting FINAL LEFT_CAVE  Scene");
             break;
