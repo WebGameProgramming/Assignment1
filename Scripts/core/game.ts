@@ -107,7 +107,7 @@ function changeScene(): void {
             leftCave2 = new scenes.LeftCave2();  // scenes.LeftCave is variable which points to leftcave.ts file.
             //ASSIGNING THE leftcave.ts file 
             currentScene = leftCave2;
-            console.log("Starting LEFT_CAVE Scene");
+            console.log("Starting LEFT_CAVE  Scene");
             break;
      
             

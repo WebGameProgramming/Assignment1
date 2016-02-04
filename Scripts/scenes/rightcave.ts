@@ -14,7 +14,7 @@ module scenes {
         
         // Start Method
         public start(): void {
-            // add LeftCave Image
+            // add RightCave Image
             this._rightCaveImage = new createjs.Bitmap("../../Assets/images/RightCave.png");
             this.addChild(this._rightCaveImage);
 
