@@ -5,6 +5,10 @@ module scenes {
         private _leftCaveImage: createjs.Bitmap;
         private _startOverButton: objects.Button;
         
+        //----------------------------
+         private _leftCaveButton: objects.Button;
+        private _rightCaveButton: objects.Button;
+        
         // CONSTRUCTOR ++++++++++++++++++++++
         constructor() {
             super();
@@ -15,8 +19,8 @@ module scenes {
         // Start Method
         public start(): void {
             // add LeftCave Image
-            this._leftCaveImage = new createjs.Bitmap("../../Assets/images/gameover.png");
-            this.addChild(this._leftCaveImage);
+ this._leftCaveImage = new createjs.Bitmap("../../Assets/images/gameover.png");
+  this.addChild(this._leftCaveImage);
 
             // add the BACK button to the OVER scene
             this._startOverButton = new objects.Button(
