@@ -10,10 +10,12 @@ var scene: number;
 
 // Game Scenes
 
-// files names are intro,lefcave,rightcave...
+// class name of intro.ts,leftcave.ts and rightcave.ts
 var intro: scenes.Intro;
 var leftCave: scenes.LeftCave;
 var rightCave: scenes.RightCave;
+// variable to match the class name of leftcave2.ts
+var leftCave2: scenes.LeftCave2;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -92,11 +94,23 @@ function changeScene(): void {
         case config.Scene.RIGHT_CAVE:
             // show the game OVER scene
             stage.removeAllChildren();
-            rightCave = new scenes.RightCave();     // scenes.RightCave is variable which points to rightcave.ts file.
+            rightCave = new scenes.RightCave();   // scenes.RightCave is variable which points to rightcave.ts file.
             //assigning the rightcave.ts file
             currentScene = rightCave;
             console.log("Starting RIGHT_CAVE Scene");
             break;
+            
+     //---------------------------------------------------------------------------
+     case config.Scene.LEFT_CAVE2:
+      // show the PLAY scene
+            stage.removeAllChildren();
+            leftCave2 = new scenes.LeftCave2();  // scenes.LeftCave is variable which points to leftcave.ts file.
+            //ASSIGNING THE leftcave.ts file 
+            currentScene = leftCave2;
+            console.log("Starting LEFT_CAVE Scene");
+            break;
+     
+            
     }
 
     console.log(currentScene.numChildren);

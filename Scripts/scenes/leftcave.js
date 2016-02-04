@@ -16,13 +16,31 @@ var scenes;
         // Start Method
         LeftCave.prototype.start = function () {
             // add LeftCave Image
-            this._leftCaveImage = new createjs.Bitmap("../../Assets/images/LeftCave.png");
+            this._leftCaveImage = new createjs.Bitmap("../../Assets/images/aakash.png");
             this.addChild(this._leftCaveImage);
-            // add the BACK button to the OVER scene
-            this._startOverButton = new objects.Button("StartOverButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
-            this.addChild(this._startOverButton);
-            // START_OVER Button event listener
-            this._startOverButton.on("click", this._startOverButtonClick, this);
+            // add the LEFT_CAVE button to the MENU scene
+            this._leftCaveButton = new objects.Button("LeftCaveButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
+            this.addChild(this._leftCaveButton);
+            // LEFT_CAVE Button event listener
+            this._leftCaveButton.on("click", this._leftCaveButtonClick, this);
+            // add the RIGHT_CAVE button to the MENU scene
+            this._rightCaveButton = new objects.Button("RightCaveButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
+            this.addChild(this._rightCaveButton);
+            // RIGHT_CAVE Button event listener
+            this._rightCaveButton.on("click", this._rightCaveButtonClick, this);
+            //--------------dont need back button--------------
+            /*
+                        // add the BACK button to the OVER scene
+                        this._startOverButton = new objects.Button(
+                            "StartOverButton",
+                            config.Screen.CENTER_X,
+                            config.Screen.CENTER_Y + 180);
+                        this.addChild(this._startOverButton);
+              */
+            /*
+              // START_OVER Button event listener
+              this._startOverButton.on("click", this._startOverButtonClick, this);
+  */
             // add this scene to the global stage container
             stage.addChild(this);
         };
@@ -30,10 +48,23 @@ var scenes;
         LeftCave.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++
+        /*
         // START_OVER Button click event handler
-        LeftCave.prototype._startOverButtonClick = function (event) {
+        private _startOverButtonClick(event: createjs.MouseEvent) {
             // Switch to the INTRO Scene
             scene = config.Scene.INTRO;
+            changeScene();
+          */
+        // LEFT_CAVE Button click event handler
+        LeftCave.prototype._leftCaveButtonClick = function (event) {
+            // Switch to the LEFT_CAVE Scene
+            scene = config.Scene.LEFT_CAVE2;
+            changeScene();
+        };
+        // RIGHT_CAVE Button click event handler
+        LeftCave.prototype._rightCaveButtonClick = function (event) {
+            // Switch to the RIGHT_CAVE Scene
+            scene = config.Scene.RIGHT_CAVE;
             changeScene();
         };
         return LeftCave;

@@ -7,6 +7,8 @@ var config;
         Scene.INTRO = 0;
         Scene.LEFT_CAVE = 1;
         Scene.RIGHT_CAVE = 2;
+        Scene.LEFT_CAVE2 = 3;
+        Scene.RIGHT_CAVE2 = 4;
         return Scene;
     })();
     config.Scene = Scene;
