@@ -95,6 +95,7 @@ function changeScene(): void {
             // show the game OVER scene
             stage.removeAllChildren();
             rightCave = new scenes.RightCave();   // scenes.RightCave is variable which points to rightcave.ts file.
+            
             //assigning the rightcave.ts file
             currentScene = rightCave;
             console.log("Starting RIGHT_CAVE Scene");
@@ -103,11 +104,12 @@ function changeScene(): void {
      //---------------------------------------------------------------------------
      case config.Scene.LEFT_CAVE2:
       // show the PLAY scene
-            stage.removeAllChildren();
-            leftCave2 = new scenes.LeftCave2();  // scenes.LeftCave is variable which points to leftcave.ts file.
+       //     stage.removeAllChildren();
+            //leftCave2 = new scenes.LeftCave2();  // scenes.LeftCave is variable which points to leftcave.ts file.
+            leftCave2=new scenes.LeftCave2();
             //ASSIGNING THE leftcave.ts file 
             currentScene = leftCave2;
-            console.log("Starting LEFT_CAVE  Scene");
+            console.log("Starting FINAL LEFT_CAVE  Scene");
             break;
      
             
