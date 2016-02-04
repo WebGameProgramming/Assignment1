@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         LeftCave.prototype.start = function () {
             // add LeftCave Image
-            this._leftCaveImage = new createjs.Bitmap("../../Assets/images/scene1.png");
+            this._leftCaveImage = new createjs.Bitmap("../../Assets/images/scene2.png");
             this.addChild(this._leftCaveImage);
             // add the LEFT_CAVE button to the MENU scene
             this._leftCaveButton = new objects.Button("LeftCaveButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
