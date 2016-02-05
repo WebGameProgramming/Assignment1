@@ -1,4 +1,4 @@
-// LEFT_CAVE SCENE
+// Right SCENE
 module scenes {
     export class RightCave extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++

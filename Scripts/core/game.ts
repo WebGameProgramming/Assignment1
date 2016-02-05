@@ -21,6 +21,9 @@ var rightCave2: scenes.RightCave2;
 //---------scene variables----------------
 var Scene13: scenes.loose;
 var Scene14: scenes.win;
+var Scene5: scenes.scene5;
+var Scene9: scenes.scene9;
+
 function init(): void {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -118,13 +121,13 @@ function changeScene(): void {
     //-------------------------------------------------------
     
      case config.Scene.RIGHT_CAVE2:
-            // show the game OVER scene
+            // show the enemy screen
             stage.removeAllChildren();
             rightCave2 = new scenes.RightCave2();   // scenes.RightCave is variable which points to rightcave.ts file.
             
             //assigning the rightcave.ts file
             currentScene = rightCave2;
-            console.log("Starting RIGHT_CAVE Scene");
+            console.log("you choosed an enemy in your team");
             break; 
             
      //-------------scene 13-------------------
@@ -149,6 +152,27 @@ function changeScene(): void {
             console.log("You won the game finally..");
             break; 
      
+     //------------------------scene5------------------
+     case config.Scene.scene5:
+            // show that you won the game
+            stage.removeAllChildren();
+            Scene5 = new scenes.scene5;   
+            
+            //assigning the rightcave.ts file
+            currentScene = Scene5;
+            console.log("You choosed enenmy");
+            break; 
+      //-----------------------scene9-------------------   
+          
+        case config.Scene.scene9:
+            // show that you won the game
+            stage.removeAllChildren();
+            Scene9 = new scenes.scene9;   
+            
+            //assigning the rightcave.ts file
+            currentScene = Scene9;
+            console.log("You choosed friend in your team");
+            break;   
             
     }
 

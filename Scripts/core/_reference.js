@@ -9,5 +9,7 @@
 /// <reference path="../scenes/leftcave2.ts" />
 /// <reference path="../scenes/rightcave2.ts" />
 ///<reference path="../scenes/scene13.ts" />
-///<reference path="../scenes/scene14.ts" /> 
+///<reference path="../scenes/scene14.ts" />
+///<reference path="../scenes/scene9.ts" />
+///<reference path="../scenes/scene5.ts" /> 
 //# sourceMappingURL=_reference.js.map

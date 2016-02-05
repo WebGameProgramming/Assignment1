@@ -9,6 +9,9 @@
         public static RIGHT_CAVE2: number=4;
         public static scene13: number=5;
         public static scene14: number=6;
+        public static scene5: number=7;
+        public static scene9: number=8;
+      
     }
     
     

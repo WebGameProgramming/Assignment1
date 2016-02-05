@@ -11,6 +11,8 @@ var config;
         Scene.RIGHT_CAVE2 = 4;
         Scene.scene13 = 5;
         Scene.scene14 = 6;
+        Scene.scene5 = 7;
+        Scene.scene9 = 8;
         return Scene;
     })();
     config.Scene = Scene;
