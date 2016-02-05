@@ -15,3 +15,8 @@
 ///<reference path="../scenes/scene14.ts" />
 ///<reference path="../scenes/scene9.ts" />
 ///<reference path="../scenes/scene5.ts" />
+///<reference path="../scenes/scene10.ts" />
+///<reference path="../scenes/scene8.ts" />
+///<reference path="../scenes/scene12.ts" />
+///<reference path="../scenes/scene15.ts" />
+///<reference path="../scenes/scene16.ts" />

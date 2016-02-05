@@ -23,6 +23,11 @@ var Scene13: scenes.loose;
 var Scene14: scenes.win;
 var Scene5: scenes.scene5;
 var Scene9: scenes.scene9;
+var Scene10: scenes.scene10;
+var Scene8: scenes.scene8;
+var Scene12: scenes.scene12;
+var Scene15: scenes.scene15;
+var Scene16: scenes.scene16;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -173,6 +178,60 @@ function changeScene(): void {
             currentScene = Scene9;
             console.log("You choosed friend in your team");
             break;   
+    //-----------------------scene10--------------------
+     case config.Scene.scene10:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            Scene10 = new scenes.scene10;   
+            
+            //assigning the rightcave.ts file
+            currentScene = Scene10;
+            console.log("You loose the game..");
+            break; 
+    
+     //-----------------------scene8--------------------
+     case config.Scene.scene8:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            Scene8 = new scenes.scene8;   
+            
+            //assigning the rightcave.ts file
+            currentScene = Scene8;
+            console.log("You loose the game..");
+            break; 
+     //-----------------------scene12--------------------
+     case config.Scene.scene12:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            Scene12 = new scenes.scene12;   
+            
+            //assigning the rightcave.ts file
+            currentScene = Scene12;
+            console.log("You loose the game..");
+            break; 
+     
+     //-----------------------scene15--------------------
+     case config.Scene.scene15:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            Scene15 = new scenes.scene15;   
+            
+            //assigning the rightcave.ts file
+            currentScene = Scene15;
+            console.log("You loose the game..");
+            break; 
+     
+     //-----------------------scene16--------------------
+     case config.Scene.scene16:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            Scene16 = new scenes.scene16;   
+            
+            //assigning the rightcave.ts file
+            currentScene = Scene16;
+            console.log("You loose the game..");
+            break; 
+            
             
     }
 

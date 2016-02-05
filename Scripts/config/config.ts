@@ -10,7 +10,12 @@
         public static scene13: number=5;
         public static scene14: number=6;
         public static scene5: number=7;
-        public static scene9: number=8;
+        public static scene8: number=8;
+        public static scene9: number=9;
+        public static scene10: number=10;
+        public static scene12: number=11;
+        public static scene15: number=12;
+        public static scene16: number=13;
       
     }
     
