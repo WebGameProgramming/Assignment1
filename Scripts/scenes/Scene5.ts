@@ -77,14 +77,14 @@ module scenes {
         private _leftCaveButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
             //winning scene
-            scene = config.Scene.scene13;
+            scene = config.Scene.scene12;
             changeScene();
         }
         
         // RIGHT_CAVE Button click event handler
         private _rightCaveButtonClick(event: createjs.MouseEvent) {
             // Switch to the RIGHT_CAVE Scene
-            scene = config.Scene.scene13;
+            scene = config.Scene.scene15;
             changeScene();
         }
     }

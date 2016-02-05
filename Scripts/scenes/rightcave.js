@@ -64,7 +64,7 @@ var scenes;
         // RIGHT_CAVE Button click event handler
         RightCave.prototype._rightCaveButtonClick = function (event) {
             // Switch to the RIGHT_CAVE Scene
-            scene = config.Scene.scene13;
+            scene = config.Scene.scene8;
             changeScene();
         };
         return RightCave;

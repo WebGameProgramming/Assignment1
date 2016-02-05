@@ -78,7 +78,7 @@ module scenes {
         private _leftCaveButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
             //winning scene
-            scene = config.Scene.scene13;
+            scene = config.Scene.scene16;
             changeScene();
         }
         

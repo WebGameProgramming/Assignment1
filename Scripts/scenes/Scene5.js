@@ -57,13 +57,13 @@ var scenes;
         scene5.prototype._leftCaveButtonClick = function (event) {
             // Switch to the LEFT_CAVE Scene
             //winning scene
-            scene = config.Scene.scene13;
+            scene = config.Scene.scene12;
             changeScene();
         };
         // RIGHT_CAVE Button click event handler
         scene5.prototype._rightCaveButtonClick = function (event) {
             // Switch to the RIGHT_CAVE Scene
-            scene = config.Scene.scene13;
+            scene = config.Scene.scene15;
             changeScene();
         };
         return scene5;
